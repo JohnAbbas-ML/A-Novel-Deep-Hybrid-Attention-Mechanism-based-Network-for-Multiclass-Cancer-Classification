@@ -122,14 +122,6 @@ Input → [BN→ReLU→Conv] × num_layers with concatenation → Output
 Input → [Query, Key, Value] → Attention weights → Scaled output + residual → Output
 ```
 
-## Performance
-
-The model has been tested on various image classification tasks and shows competitive performance:
-
-- **Parameters**: ~25M parameters (depending on num_classes)
-- **Memory**: Efficient memory usage due to attention mechanisms
-- **Speed**: Balanced inference speed with high accuracy
-
 ## Training Tips
 
 1. **Learning Rate**: Start with 0.001, use ReduceLROnPlateau callback
